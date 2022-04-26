@@ -1,5 +1,5 @@
 # datafusion_cdap_action_plugin
-Complete project example for creating a Google cloud datafusion (CDAP) action plugin. Sourced and adapted from the documentation where there is no quickstart project.
+Complete example project to create a custom Google cloud datafusion (CDAP) action plugin. Sourced and adapted from the documentation where there is no quickstart project.
 
 ## Action Plugin
 An Action plugin runs arbitrary logic at the start or end of a batch data pipeline.
