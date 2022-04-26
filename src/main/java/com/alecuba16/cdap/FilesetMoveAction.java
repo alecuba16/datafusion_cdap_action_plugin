@@ -16,7 +16,19 @@ import javax.annotation.Nullable;
 import java.util.regex.Pattern;
 
 /**
- * Action that moves files from one fileset into another, optionally filtering files that match a regex.
+ * Action Plugin
+ * An Action plugin runs arbitrary logic at the start or end of a batch data pipeline.
+ *
+ * In order to implement an Action plugin, you extend the Action class. Only one method
+ * is required to be implemented: run()
+ *
+ * Methods
+ * run(): Used to implement the functionality of the plugin.
+ * configurePipeline(): Used to perform any validation on the application configuration
+ * that is required by this plugin or to create any datasets if the fieldName for a dataset is not a macro.
+ *
+ * In this example the action plugin moves files from one fileset into another, optionally filtering files
+ * that match a regex.
  */
 @Plugin(type = Action.PLUGIN_TYPE)
 @Name(FilesetMoveAction.NAME)
